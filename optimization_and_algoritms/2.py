@@ -3,13 +3,18 @@
 
 
 def main():
-	input_value = None
 	with open('INPUT.TXT', 'r') as f:
-		input_value = int(f.readline())
+		v = int(f.readline())
+
+	a = v
+	b = 2
+
+	if v > 0:
+		a = 1
+		b = v + 1
 
 	with open('OUTPUT.TXT', 'w') as f:
-		f.write(str(sum([x for x in range(1, input_value + 1)])))
-
+		f.write(str(sum([x for x in range(a, b)])))
 
 if __name__ == '__main__':
 	main()
