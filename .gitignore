@@ -1,3 +1,4 @@
 INPUT.TXT
 OUTPUT.TXT
 python.bat
+*.pyc
